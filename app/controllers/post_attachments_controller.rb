@@ -1,12 +1,12 @@
 class PostAttachmentsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post_attachment, only: [:show, :edit, :update, :destroy]
 
   # GET /post_attachments
   # GET /post_attachments.json
   def index
     @post_attachments = PostAttachment.all
   end
-
+  
   # GET /post_attachments/1
   # GET /post_attachments/1.json
   def show
@@ -46,6 +46,7 @@ class PostAttachmentsController < ApplicationController
       end
     end
   end
+
 
   # DELETE /post_attachments/1
   # DELETE /post_attachments/1.json
